@@ -29,7 +29,7 @@ scheduler_events = {
         "terrasuitehelpdesk.search.download_corpus",
     ],
     "daily": [
-        "terrasuitehelpdesk.helpdesk.doctype.hd_ticket.hd_ticket.close_tickets_after_n_days"
+        "terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_ticket.hd_ticket.close_tickets_after_n_days"
     ],
 }
 
@@ -43,7 +43,7 @@ website_route_rules = [
 
 doc_events = {
     "Contact": {
-        "before_insert": "terrasuitehelpdesk.helpdesk.hooks.contact.before_insert",
+        "before_insert": "terrasuitehelpdesk.terrasuitehelpdesk.hooks.contact.before_insert",
     },
     "Assignment Rule": {
         "on_trash": "terrasuitehelpdesk.extends.assignment_rule.on_assignment_rule_trash",
@@ -51,11 +51,11 @@ doc_events = {
 }
 
 has_permission = {
-    "HD Ticket": "terrasuitehelpdesk.helpdesk.doctype.hd_ticket.hd_ticket.has_permission",
+    "HD Ticket": "terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_ticket.hd_ticket.has_permission",
 }
 
 permission_query_conditions = {
-    "HD Ticket": "terrasuitehelpdesk.helpdesk.doctype.hd_ticket.hd_ticket.permission_query",
+    "HD Ticket": "terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_ticket.hd_ticket.permission_query",
 }
 
 # DocType Class

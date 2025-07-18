@@ -9,7 +9,7 @@ export function useTicket(
   errorCB?: (err: any) => any
 ): Resource<Ticket> {
   const t = createResource({
-    url: "terrasuitehelpdesk.helpdesk.doctype.hd_ticket.api.get_one",
+    url: "terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_ticket.api.get_one",
     cache: ["Ticket", id],
     params: {
       name: id,

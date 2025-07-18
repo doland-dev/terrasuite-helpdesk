@@ -13,7 +13,7 @@ head_include %}
           {%- else -%}
           <!-- prettier-ignore -->
           {% set helpdesk_name = frappe.get_doc("HD Settings").helpdesk_name %}
-						{% if helpdesk_name %}
+          {% if helpdesk_name %}
           <div class="ql-editor read-mode">
             <p>{{ helpdesk_name }}</p>
           </div>
@@ -22,15 +22,8 @@ head_include %}
       </div>
       <div class="col-4 col-lg-8 d-flex justify-content-end">
         <div class="d-flex">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
@@ -69,19 +62,15 @@ head_include %}
         <div class="footer-col-left col-sm-6 col-12">
           <!-- prettier-ignore -->
           {% set helpdesk_name = frappe.get_doc("HD Settings").helpdesk_name %}
-					{% if helpdesk_name %}
+          {% if helpdesk_name %}
           <div class="ql-editor read-mode">
             <p>© {{ helpdesk_name }}. 2022</p>
           </div>
           {% endif %}
         </div>
         <div class="footer-col-right col-sm-6 col-12 footer-powered">
-          <a
-            class="text-muted"
-            href="https://frappeframework.com?source=website_footer"
-            target="_blank"
-            >Powered by Frappe Helpdesk</a
-          >
+          <a class="text-muted" href="https://frappeframework.com?source=website_footer" target="_blank">Powered by
+            Frappe Helpdesk</a>
         </div>
       </div>
     </div>

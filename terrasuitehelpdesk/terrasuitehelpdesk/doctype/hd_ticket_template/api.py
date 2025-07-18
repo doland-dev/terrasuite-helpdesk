@@ -5,7 +5,7 @@ import frappe
 # from frappe import _
 from pypika import JoinType
 
-from terrasuitehelpdesk.helpdesk.doctype.hd_form_script.hd_form_script import get_form_script
+from terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_form_script.hd_form_script import get_form_script
 from terrasuitehelpdesk.utils import check_permissions
 
 DOCTYPE_TEMPLATE = "HD Ticket Template"

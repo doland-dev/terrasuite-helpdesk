@@ -6,9 +6,9 @@ from frappe.utils.caching import redis_cache
 from pypika import Criterion, Order
 
 from terrasuitehelpdesk.consts import DEFAULT_TICKET_TEMPLATE
-from terrasuitehelpdesk.helpdesk.doctype.hd_form_script.hd_form_script import get_form_script
-from terrasuitehelpdesk.helpdesk.doctype.hd_ticket_template.api import get_fields_meta
-from terrasuitehelpdesk.helpdesk.doctype.hd_ticket_template.api import get_one as get_template
+from terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_form_script.hd_form_script import get_form_script
+from terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_ticket_template.api import get_fields_meta
+from terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_ticket_template.api import get_one as get_template
 from terrasuitehelpdesk.utils import agent_only, check_permissions, get_customer, is_agent
 
 

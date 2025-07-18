@@ -8,15 +8,15 @@ terrasuitehelpdesk.patches.naming_autoincrement
 execute:frappe.delete_doc("Workspace", "Frappe Desk", force=True)
 terrasuitehelpdesk.patches.add_priority_integer
 terrasuitehelpdesk.patches.template_remove_default_fields
-terrasuitehelpdesk.helpdesk.doctype.hd_ticket.patches.fallback_ticket_type
+terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_ticket.patches.fallback_ticket_type
 execute:frappe.delete_doc("Server Script", "Ticket Auto Set Custom Fields", ignore_missing=True)
-terrasuitehelpdesk.helpdesk.doctype.hd_ticket_feedback_option.patches.ootb
-terrasuitehelpdesk.helpdesk.doctype.hd_ticket_feedback_option.patches.label_as_name
-terrasuitehelpdesk.helpdesk.doctype.hd_service_level_agreement.patches.missing_sla_creation
-terrasuitehelpdesk.helpdesk.doctype.hd_ticket.patches.replace_overdue_failed
+terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_ticket_feedback_option.patches.ootb
+terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_ticket_feedback_option.patches.label_as_name
+terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_service_level_agreement.patches.missing_sla_creation
+terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_ticket.patches.replace_overdue_failed
 terrasuitehelpdesk.patches.create_helpdesk_folder
-terrasuitehelpdesk.helpdesk.doctype.hd_ticket.patches.feedback_in_master
-terrasuitehelpdesk.helpdesk.doctype.hd_ticket.patches.first_responded_on
+terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_ticket.patches.feedback_in_master
+terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_ticket.patches.first_responded_on
 terrasuitehelpdesk.patches.update_hd_team_users
 terrasuitehelpdesk.patches.default_article_category #v2
 terrasuitehelpdesk.patches.communication_read_perm_agent

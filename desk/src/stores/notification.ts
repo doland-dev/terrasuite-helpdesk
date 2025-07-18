@@ -27,14 +27,14 @@ export const useNotificationStore = defineStore("notification", () => {
     auto: authStore.hasDeskAccess,
   });
   const clear = createResource({
-    url: "terrasuitehelpdesk.helpdesk.doctype.hd_notification.utils.clear",
+    url: "terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_notification.utils.clear",
     auto: false,
     onSuccess: () => resource.reload(),
   });
 
   const read = (ticket) => {
     createResource({
-      url: "terrasuitehelpdesk.helpdesk.doctype.hd_notification.utils.clear",
+      url: "terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_notification.utils.clear",
       auto: true,
       params: {
         ticket: ticket,

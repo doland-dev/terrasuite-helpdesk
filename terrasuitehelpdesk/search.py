@@ -23,7 +23,7 @@ from redis.exceptions import ResponseError
 from terrasuitehelpdesk.utils import is_agent
 
 if TYPE_CHECKING:
-    from terrasuitehelpdesk.helpdesk.doctype.hd_settings.hd_settings import HDSettings
+    from terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_settings.hd_settings import HDSettings
 
 NUM_RESULTS = 5
 

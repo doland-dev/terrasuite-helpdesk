@@ -10,7 +10,7 @@ from frappe.model.document import Document
 from frappe.model.naming import append_number_if_name_exists
 from frappe.realtime import get_website_room
 
-from terrasuitehelpdesk.helpdesk.doctype.hd_ticket.hd_ticket import (
+from terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_ticket.hd_ticket import (
     remove_guest_ticket_creation_permission,
     set_guest_ticket_creation_permission,
 )

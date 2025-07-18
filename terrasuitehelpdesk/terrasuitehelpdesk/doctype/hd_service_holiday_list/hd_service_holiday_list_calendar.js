@@ -11,7 +11,7 @@ frappe.views.calendar["HD Service Holiday List"] = {
   },
   order_by: `from_date`,
   get_events_method:
-    "terrasuitehelpdesk.helpdesk.doctype.hd_service_holiday_list.hd_service_holiday_list.get_events",
+    "terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_service_holiday_list.hd_service_holiday_list.get_events",
   filters: [
     {
       fieldtype: "Link",

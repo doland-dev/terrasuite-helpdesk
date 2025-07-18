@@ -17,10 +17,10 @@ from pypika.queries import Query
 from pypika.terms import Criterion
 
 from terrasuitehelpdesk.consts import DEFAULT_TICKET_PRIORITY, DEFAULT_TICKET_TYPE
-from terrasuitehelpdesk.helpdesk.doctype.hd_ticket_activity.hd_ticket_activity import (
+from terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_ticket_activity.hd_ticket_activity import (
     log_ticket_activity,
 )
-from terrasuitehelpdesk.helpdesk.utils.email import (
+from terrasuitehelpdesk.terrasuitehelpdesk.utils.email import (
     default_outgoing_email_account,
     default_ticket_outgoing_email_account,
 )

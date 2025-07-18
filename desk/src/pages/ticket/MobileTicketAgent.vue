@@ -236,7 +236,7 @@ const showAssignmentModal = ref(false);
 const showSubjectDialog = ref(false);
 
 const ticket = createResource({
-  url: "terrasuitehelpdesk.helpdesk.doctype.hd_ticket.api.get_one",
+  url: "terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_ticket.api.get_one",
   cache: ["Ticket", props.ticketId],
   auto: true,
   params: {

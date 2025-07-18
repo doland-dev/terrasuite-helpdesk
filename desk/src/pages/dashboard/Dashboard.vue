@@ -199,7 +199,7 @@ const trendData = createResource({
 
 const agentFilter = ref(null);
 const teamMembers = createResource({
-  url: "terrasuitehelpdesk.helpdesk.doctype.hd_team.hd_team.get_team_members",
+  url: "terrasuitehelpdesk.terrasuitehelpdesk.doctype.hd_team.hd_team.get_team_members",
   cache: ["Analytics", "TeamMembers"],
   params: {
     team: filters.team,
