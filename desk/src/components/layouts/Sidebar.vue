@@ -615,14 +615,14 @@ async function handleFirstTicketNavigation() {
 async function getFirstTicket() {
   let ticket = localStorage.getItem("firstTicket");
   if (ticket) return ticket;
-  return await call("helpdesk.api.onboarding.get_first_ticket");
+  return await call("terrasuitehelpdesk.api.onboarding.get_first_ticket");
 }
 
 async function getGeneralCategory() {
   let generalCategory = localStorage.getItem("generalCategoryId");
   if (!generalCategory) {
     generalCategory = await call(
-      "helpdesk.api.onboarding.get_general_category_id"
+      "terrasuitehelpdesk.api.onboarding.get_general_category_id"
     );
     if (!generalCategory) return;
     localStorage.setItem("generalCategoryId", generalCategory);

@@ -28,7 +28,7 @@ export const deleteRes = createResource({
 });
 
 export const deleteArticles = createResource({
-  url: "helpdesk.api.knowledge_base.delete_articles",
+  url: "terrasuitehelpdesk.api.knowledge_base.delete_articles",
   makeParams({ articles }) {
     return {
       articles,
@@ -41,7 +41,7 @@ export const deleteArticles = createResource({
 
 // Category
 export const newCategory = createResource({
-  url: "helpdesk.api.knowledge_base.create_category",
+  url: "terrasuitehelpdesk.api.knowledge_base.create_category",
   makeParams({ title }) {
     return {
       title,
@@ -60,7 +60,7 @@ export const updateCategoryTitle = createResource({
 });
 
 export const moveToCategory = createResource({
-  url: "helpdesk.api.knowledge_base.move_to_category",
+  url: "terrasuitehelpdesk.api.knowledge_base.move_to_category",
   makeParams({ category, articles }) {
     return {
       category,
@@ -74,7 +74,7 @@ export const moveToCategory = createResource({
 });
 
 export const mergeCategory = createResource({
-  url: "helpdesk.api.knowledge_base.merge_category",
+  url: "terrasuitehelpdesk.api.knowledge_base.merge_category",
   makeParams({ source, target }) {
     return {
       source,
@@ -88,12 +88,12 @@ export const mergeCategory = createResource({
 });
 
 export const categories = createResource({
-  url: "helpdesk.api.knowledge_base.get_categories",
+  url: "terrasuitehelpdesk.api.knowledge_base.get_categories",
   cache: ["categories"],
 });
 
 export const categoryName = createResource({
-  url: "helpdesk.api.knowledge_base.get_category_title",
+  url: "terrasuitehelpdesk.api.knowledge_base.get_category_title",
   cache: ["categoryName"],
   makeParams({ category }) {
     return { category };
@@ -116,7 +116,7 @@ export const setFeedback = createResource({
 
 // view count
 export const incrementView = createResource({
-  url: "helpdesk.api.knowledge_base.increment_views",
+  url: "terrasuitehelpdesk.api.knowledge_base.increment_views",
   makeParams: ({ article }) => ({
     article,
   }),

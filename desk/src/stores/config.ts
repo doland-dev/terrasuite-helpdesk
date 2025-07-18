@@ -5,7 +5,7 @@ import { computed, ComputedRef } from "vue";
 
 export const useConfigStore = defineStore("config", () => {
   const configRes = createResource({
-    url: "helpdesk.api.config.get_config",
+    url: "terrasuitehelpdesk.api.config.get_config",
     auto: true,
   });
 

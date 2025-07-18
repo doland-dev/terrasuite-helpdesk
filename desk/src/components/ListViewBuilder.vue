@@ -285,7 +285,7 @@ const emptyState = computed(() => {
 const isViewUpdated = ref(false);
 
 const list = createResource({
-  url: "helpdesk.api.doc.get_list_data",
+  url: "terrasuitehelpdesk.api.doc.get_list_data",
   params: defaultParams,
   transform: (data) => {
     data.columns.forEach((column) => {
@@ -397,7 +397,7 @@ function handleColumnConfig(column) {
 }
 
 const filterableFields = createResource({
-  url: "helpdesk.api.doc.get_filterable_fields",
+  url: "terrasuitehelpdesk.api.doc.get_filterable_fields",
   cache: ["DocField", options.value.doctype],
   auto: !options.value.hideViewControls,
   params: {
@@ -418,7 +418,7 @@ const filterableFields = createResource({
 });
 
 const sortableFields = createResource({
-  url: "helpdesk.api.doc.sort_options",
+  url: "terrasuitehelpdesk.api.doc.sort_options",
   auto: !options.value.hideViewControls,
   params: {
     doctype: options.value.doctype,
@@ -427,7 +427,7 @@ const sortableFields = createResource({
 });
 
 const quickFilters = createResource({
-  url: "helpdesk.api.doc.get_quick_filters",
+  url: "terrasuitehelpdesk.api.doc.get_quick_filters",
   auto: !options.value.hideViewControls,
   params: {
     doctype: options.value.doctype,

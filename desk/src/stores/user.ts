@@ -10,7 +10,7 @@ export const useUserStore = defineStore("user", () => {
   const userRoles = ref<Record<string, string>>({});
 
   const users = createResource({
-    url: "helpdesk.api.session.get_users",
+    url: "terrasuitehelpdesk.api.session.get_users",
     cache: "Users",
     initialData: [],
     transform(users) {

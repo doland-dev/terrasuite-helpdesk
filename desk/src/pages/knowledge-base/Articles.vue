@@ -38,7 +38,7 @@ const props = defineProps({
 });
 
 const articles = createResource({
-  url: "helpdesk.api.knowledge_base.get_category_articles",
+  url: "terrasuitehelpdesk.api.knowledge_base.get_category_articles",
   cache: ["articles", props.categoryId],
   params: {
     category: props.categoryId,

@@ -28,7 +28,7 @@ const telemetry = ref({
 let posthog: typeof window.posthog = window.posthog;
 
 let posthogSettings = createResource({
-  url: "helpdesk.api.telemetry.get_posthog_settings",
+  url: "terrasuitehelpdesk.api.telemetry.get_posthog_settings",
   cache: "posthog_settings",
   onSuccess: (ps: PosthogSettings) => init(ps),
 });

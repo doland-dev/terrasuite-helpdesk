@@ -205,7 +205,7 @@ provide("communicationArea", communicationAreaRef);
 const showSubjectDialog = ref(false);
 
 const ticket = createResource({
-  url: "helpdesk.helpdesk.doctype.hd_ticket.api.get_one",
+  url: "terrasuitehelpdesk.helpdesk.doctype.hd_ticket.api.get_one",
   auto: true,
   makeParams: () => ({
     name: props.ticketId,

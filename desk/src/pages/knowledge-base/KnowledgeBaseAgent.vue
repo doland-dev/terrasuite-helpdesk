@@ -85,7 +85,7 @@ const moveToModal = ref(false);
 const mergeModal = ref(false);
 
 const generalCategory = createResource({
-  url: "helpdesk.api.knowledge_base.get_general_category",
+  url: "terrasuitehelpdesk.api.knowledge_base.get_general_category",
   auto: true,
   cache: ["GeneralCategory"],
 });

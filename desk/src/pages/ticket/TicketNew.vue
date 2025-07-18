@@ -160,7 +160,7 @@ const attachments = ref([]);
 const templateFields = reactive({});
 
 const template = createResource({
-  url: "helpdesk.helpdesk.doctype.hd_ticket_template.api.get_one",
+  url: "terrasuitehelpdesk.helpdesk.doctype.hd_ticket_template.api.get_one",
   makeParams: () => ({
     name: props.templateId || "Default",
   }),
@@ -218,7 +218,7 @@ function handleOnFieldChange(e: any, fieldname: string, fieldtype: string) {
 }
 
 const ticket = createResource({
-  url: "helpdesk.helpdesk.doctype.hd_ticket.api.new",
+  url: "terrasuitehelpdesk.helpdesk.doctype.hd_ticket.api.new",
   debounce: 300,
   makeParams: () => ({
     doc: {

@@ -165,7 +165,7 @@ const close = () => {
 
 // API Resources
 const sentInvitesResource = createResource({
-  url: "helpdesk.api.agent.sent_invites",
+  url: "terrasuitehelpdesk.api.agent.sent_invites",
   onSuccess: (res) => {
     currentInputIsValidEmail.value = false;
     searchInput.value = "";

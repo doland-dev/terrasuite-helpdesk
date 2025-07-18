@@ -180,7 +180,7 @@ watch(
 );
 
 const article: Resource<Article> = createResource({
-  url: "helpdesk.api.knowledge_base.get_article",
+  url: "terrasuitehelpdesk.api.knowledge_base.get_article",
   params: {
     name: props.articleId,
   },

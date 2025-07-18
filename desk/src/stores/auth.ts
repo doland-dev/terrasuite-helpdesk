@@ -5,7 +5,7 @@ import { computed, ComputedRef, Ref, ref } from "vue";
 
 const URI_LOGIN = "login";
 const URI_LOGOUT = "logout";
-const URI_USER_INFO = "helpdesk.api.auth.get_user";
+const URI_USER_INFO = "terrasuitehelpdesk.api.auth.get_user";
 
 /**
  * This is supposed to be the entry point of authentication. This will be

@@ -108,7 +108,7 @@ const targetTicket = ref(null);
 const subject = ref(null);
 
 const mergeTicket = createResource({
-  url: "helpdesk.helpdesk.doctype.hd_ticket.api.merge_ticket",
+  url: "terrasuitehelpdesk.helpdesk.doctype.hd_ticket.api.merge_ticket",
   makeParams({ source, target }) {
     return {
       source,

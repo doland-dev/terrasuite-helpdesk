@@ -87,7 +87,7 @@ interface P {
 
 const { query = "", hideViewAll = false } = defineProps<P>();
 const articles = createResource({
-  url: "helpdesk.api.article.search",
+  url: "terrasuitehelpdesk.api.article.search",
   debounce: 500,
   auto: false,
 });

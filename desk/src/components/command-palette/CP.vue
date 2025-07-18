@@ -106,7 +106,7 @@ export default {
   resources: {
     search() {
       return {
-        url: "helpdesk.search.search",
+        url: "terrasuitehelpdesk.search.search",
         makeParams(query) {
           return { query };
         },

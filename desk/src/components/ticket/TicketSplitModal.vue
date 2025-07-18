@@ -62,7 +62,7 @@ const showDialog = defineModel<boolean>();
 const subject = ref(null);
 
 const splitTicket = createResource({
-  url: "helpdesk.helpdesk.doctype.hd_ticket.api.split_ticket",
+  url: "terrasuitehelpdesk.helpdesk.doctype.hd_ticket.api.split_ticket",
   makeParams({ subject, communication_id }) {
     return {
       subject,

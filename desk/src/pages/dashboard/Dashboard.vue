@@ -171,7 +171,7 @@ const colors = [
 ];
 
 const numberCards = createResource({
-  url: "helpdesk.api.dashboard.get_dashboard_data",
+  url: "terrasuitehelpdesk.api.dashboard.get_dashboard_data",
   cache: ["Analytics", "NumberCards"],
   params: {
     dashboard_type: "number_card",
@@ -180,7 +180,7 @@ const numberCards = createResource({
 });
 
 const masterData = createResource({
-  url: "helpdesk.api.dashboard.get_dashboard_data",
+  url: "terrasuitehelpdesk.api.dashboard.get_dashboard_data",
   cache: ["Analytics", "MasterCharts"],
   params: {
     dashboard_type: "master",
@@ -189,7 +189,7 @@ const masterData = createResource({
 });
 
 const trendData = createResource({
-  url: "helpdesk.api.dashboard.get_dashboard_data",
+  url: "terrasuitehelpdesk.api.dashboard.get_dashboard_data",
   cache: ["Analytics", "TrendCharts"],
   params: {
     dashboard_type: "trend",
@@ -199,7 +199,7 @@ const trendData = createResource({
 
 const agentFilter = ref(null);
 const teamMembers = createResource({
-  url: "helpdesk.helpdesk.doctype.hd_team.hd_team.get_team_members",
+  url: "terrasuitehelpdesk.helpdesk.doctype.hd_team.hd_team.get_team_members",
   cache: ["Analytics", "TeamMembers"],
   params: {
     team: filters.team,

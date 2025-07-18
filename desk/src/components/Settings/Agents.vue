@@ -213,7 +213,7 @@ function updateRole(agent: string, newRole: string) {
     return;
   }
 
-  call("helpdesk.helpdesk.doctype.hd_agent.hd_agent.update_agent_role", {
+  call("terrasuitehelpdesk.helpdesk.doctype.hd_agent.hd_agent.update_agent_role", {
     user: agent,
     new_role: newRole,
   }).then(() => {
