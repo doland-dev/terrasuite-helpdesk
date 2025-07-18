@@ -1,5 +1,5 @@
 [project]
-name = "terrasuite_helpdesk"
+name = "terrasuitehelpdesk"
 authors = [
     { name = "Terrasuite Pvt Ltd", email = "saifulloh.fadli@calterras.com"}
 ]
@@ -8,15 +8,12 @@ requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
 dependencies = [
+    # Core dependencies
     "textblob==0.18.0.post0",
 ]
-
 [build-system]
 requires = ["flit_core >=3.4,<4"]
 build-backend = "flit_core.buildapi"
-
-[tool.flit.metadata]
-module = "helpdesk"
 
 [tool.bench.frappe-dependencies]
 frappe = ">=16.0.0-dev,<17.0.0"

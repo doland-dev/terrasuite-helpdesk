@@ -1,0 +1,2 @@
+import{_ as o}from"./TicketCommunication.vue_vue_type_script_setup_true_lang-513143c6.js";import"./EmailContent-821cc341.js";import"./index-54e545bb.js";import"./AttachmentItem.vue_vue_type_script_setup_true_lang-f98cb03f.js";import"./more-horizontal-b561c647.js";import"./dayjs-8f71cd34.js";import"./UserAvatar.vue_vue_type_script_setup_true_lang-73349f36.js";import"./Avatar.vue_vue_type_script_setup_true_lang-33c4215a.js";import"./knowledgeBase-de4d1c97.js";import"./index-587a74f3.js";export{o as default};
+//# sourceMappingURL=TicketCommunication-f9351f42.js.map
